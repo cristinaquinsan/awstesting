@@ -1,0 +1,12 @@
+version : '3'
+services:
+  web:
+    build: .
+    links:
+      - "node:nodejs"
+    ports:
+      - "8080:80"
+  node:
+    build: ./NodeJS/
+    ports:
+      - "3000:3000"
