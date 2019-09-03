@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
-
+var cors = require('cors')
+ 
+app.use(cors())
 // Constants
 app.set('port', process.env.PORT || 3000);
-const HOST = 'localhost';
+
 
 // App
 
@@ -13,5 +15,7 @@ app.get('/api', (req, res) => {
   });
 });
 
-app.listen(app.get('port'), HOST);
-console.log(`Running on http://${HOST}:`,app.get('port'));
+app.listen(app.get('port'),function () {
+  console.log('Example app listening on port 3000!');
+});
+//console.log(`Running on http://${HOST}:`,app.get('port'));
