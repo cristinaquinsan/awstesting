@@ -6,7 +6,8 @@ app.set('port', process.env.PORT || 3000);
 const HOST = 'localhost';
 
 // App
-app.get('/', (req, res) => {
+
+app.get('/api', (req, res) => {
   res.send({
     str: "Hello world, this is meeeee"
   });
