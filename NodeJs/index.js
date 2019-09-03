@@ -1,16 +1,15 @@
 const express = require('express');
 const app = express();
 
-
-// setting port
+// Constants
 app.set('port', process.env.PORT || 3000);
-
-
 const HOST = 'localhost';
 
-
+// App
 app.get('/', (req, res) => {
-  res.send('Hello world\n');
+  res.send({
+    str: "Hello world, this is meeeee"
+  });
 });
 
 app.listen(app.get('port'), HOST);
