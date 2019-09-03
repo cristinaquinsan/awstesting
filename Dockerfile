@@ -1,9 +1,9 @@
 FROM nginx
 
-COPY /src/index.html /usr/share/nginx/html
-
 COPY default.conf /etc/nginx/conf.d/
+
+COPY ./src/web/ /var/www/html/
 
 EXPOSE 80
 
-CMD ["nginx"]
+CMD ["nginx","-g daemon off;"]
