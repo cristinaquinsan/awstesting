@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+aside{
+    display: flex;
+    width: 15%;
+    height: 100%;
+    background-color: rgb(48, 57, 65);
+    justify-content: center;
+    border: solid black 3px;
+    color: white;
+}
+
+img{
+    width: 100%;
+}
+
+#parteDerecha{
+    display: flex;
+    width: 85%;
+    height: 100%;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    border: solid black 3px;
+}
+main{
+    display: flex;
+    width: 100%;
+    height: 65%;
+}
+
+#text{
+    display: flex;
+    border: solid black 3px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(13, 26, 139);
+    justify-content: center;
+    border: solid black 3px;
+    color: white;
+}
