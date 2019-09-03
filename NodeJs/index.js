@@ -6,7 +6,7 @@ const HOST = 'localhost';
 
 // App
 const app = express();
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send({
     str: "Hello world, this is meeeee"
   });
