@@ -3,5 +3,5 @@ fetch('http://localhost:3000/api')
     return response.json();
   })
   .then(function(myJson) {
-    console.log(myJson);
+    document.getElementById("textito").innerHTML = myJson.str
   });
