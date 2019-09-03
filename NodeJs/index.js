@@ -1,11 +1,12 @@
 const express = require('express');
+const app = express();
 
 // Constants
 app.set('port', process.env.PORT || 3000);
 const HOST = 'localhost';
 
 // App
-const app = express();
+
 app.get('/api', (req, res) => {
   res.send({
     str: "Hello world, this is meeeee"
